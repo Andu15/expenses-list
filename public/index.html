@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expenses-List-App</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css" >
+</head>
+<body>
+  <header>Lista de Gastos</header>
+  <main>
+    <section id="display"></section>
+    <section id="editor" >
+      <div id="input-container" class="pure-form">
+        <input type="text" id="title" />
+        <input type="number" id="cost" />
+        <select name="currency" id="currency" >
+          <option value="USD">USD</option>
+          <option value="PEN">PEN</option>
+        </select>
+        <button id="bAdd">Agregar</button>
+      </div>
+    </section>
+    <section id="items"></section>
+  </main>
+  <script src="js/expenses.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
